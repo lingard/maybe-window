@@ -1,13 +1,19 @@
 {
   "name": "maybe-window",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "lib/index.js",
   "license": "MIT",
   "private": true,
   "dependencies": {
     "data.maybe": "1.2.3"
   },
+  "scripts": {
+    "build": "rollup --c"
+  },
   "devDependencies": {
+    "@babel/core": "7.7.5",
+    "@babel/preset-env": "7.7.6",
+    "@babel/preset-flow": "7.7.4",
     "@typescript-eslint/eslint-plugin": "2.x",
     "@typescript-eslint/parser": "2.x",
     "babel-eslint": "10.x",
@@ -19,6 +25,10 @@
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "1.x",
     "flow-bin": "0.102.0",
-    "flow-typed": "2.6.2"
+    "flow-typed": "2.6.2",
+    "rollup": "1.27.9",
+    "rollup-plugin-babel": "4.3.3",
+    "rollup-plugin-flow": "1.1.1",
+    "rollup-plugin-flow-entry": "0.3.3"
   }
 }
